@@ -1,13 +1,16 @@
 import os
 import shutil
 
-
+# Path of the directory that will receive the the files that will be distributed
 incoming = r''
+# Path of the file that will hold the history(.txt) 
 history = r''
+# Paths of the directories that will receive the copies
+# each path must be assigned to one variable and included into the directories list(directories)
 dir1 = r''
 dir2 = r''
 dir3 = r''
-
+# List containing all the directories that will receive the files
 directories = [dir1, dir2, dir3]
 def getFileNames(dirPath):
   for root, dirs, fileNames in os.walk(dirPath):
